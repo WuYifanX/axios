@@ -1,4 +1,6 @@
 ts-axios-doc/
 node_modules/
 .DS_Store
-
+dist/
+.rpt2_cache/
+docs/

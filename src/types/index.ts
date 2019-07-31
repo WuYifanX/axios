@@ -1,18 +1,22 @@
 export type Method =
   | 'get'
   | 'GET'
+  | 'delete'
+  | 'Delete'
+  | 'head'
+  | 'HEAD'
+  | 'options'
+  | 'OPTIONS'
   | 'post'
   | 'POST'
-  | 'update'
-  | 'UPDATE'
-  | 'delete'
-  | 'DELETE'
-  | 'option'
-  | 'OPTION'
+  | 'put'
+  | 'PUT'
+  | 'patch'
+  | 'PATCH'
 
 export interface AxiosRequestConfig {
   url: string
-  method: Method
-  data: any
-  param: any
+  method?: Method
+  data?: any
+  params?: any
 }
