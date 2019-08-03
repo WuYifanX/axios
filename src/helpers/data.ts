@@ -6,3 +6,15 @@ export const transformRequest = (data: any) => {
   }
   return data
 }
+
+export const transformData = (data: any) => {
+  let result
+  if (typeof data === 'string') {
+    try {
+      result = JSON.parse(data)
+    } catch (e) {
+      //
+    }
+  }
+  return result
+}
